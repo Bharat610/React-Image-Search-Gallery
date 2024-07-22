@@ -31,11 +31,11 @@ export default function ImageSearch(props) {
     backgroundRepeat: "no-repeat",
     backgroundBlendMode: "multiply",
   };
-
+    
   return (
     <>
       <header className="w-full bg-transparent p-3">
-        <img src="./src/assets/Psa-logo.jpg" className="w-14 h-14" alt="logo" />
+        <img src="./src/images/pix-logo.jpg" className="w-14 h-14" alt="logo" />
       </header>
       <div
         style={styles}
