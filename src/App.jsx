@@ -33,7 +33,7 @@ export default function App() {
         : 
         <>
         {term &&
-        <h3 className="pt-10 pl-10 text-xl">Searched for : <span className="font-bold text-lg">{term}</span></h3>
+        <h3 className="pt-10 bg-gray-100 pl-10 text-xl">Searched for : <span className="font-bold text-lg">{term}</span></h3>
         }
         <div className="p-10 bg-gray-100 flex flex-wrap justify-between gap-[60px]">
           {boxImage.map((image) => {
