@@ -11,6 +11,7 @@ export default function ImageSearch(props) {
   function handleSubmit(e) {
     e.preventDefault();
     props.searchText(text);
+    props.updatePage(1);
   }
 
   React.useEffect(() => {

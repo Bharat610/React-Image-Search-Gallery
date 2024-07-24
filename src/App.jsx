@@ -18,14 +18,12 @@ export default function App() {
     )
       .then((res) => res.json())
       .then((val) => {
-
         if(prevRef.current == term){
           setBoxImage(prev => {
             return [...prev, ...val.hits]
           });
         }
-        else{
-            setPageNo(1);
+        else{ 
             setBoxImage(val.hits);
             prevRef.current = term;
         }
@@ -45,7 +43,7 @@ export default function App() {
 
   return (
     <>
-      <ImageSearch searchText={setTerm} />
+      <ImageSearch searchText={setTerm} updatePage={setPageNo} />
         {loading ?
         <div className="p-10 bg-gray-100 flex flex-wrap justify-between gap-[60px]">
           {boxImage.map(() => <Loader />)}
